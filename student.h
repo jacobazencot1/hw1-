@@ -15,8 +15,8 @@ public:
     NodeStudent* fatherPtr;
     NodeStudent* lSon;
     NodeStudent* rSon;
-    int insert (NodeStudent* std);
-    int remove( NodeStudent* std);
+    void insert (NodeStudent* std);
+    void remove( NodeStudent* std);
     NodeStudent* ptrStd;
 
 

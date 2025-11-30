@@ -6,36 +6,46 @@
 
 TechSystem::TechSystem()
 {
-    
+    //AvlTree StudentsTree;;
+    //AvlTree CourseTree;
 }
 
 TechSystem::~TechSystem()
 {
-    
+    //StudentTree.delete()
+    //CourseTree.delete()
 }
 
 StatusType TechSystem::addStudent(int studentId)
 {
+    //NodeStudent node= new NodeStudent(studentId,points = -currentBonus);
+    //StudentTree.insertStudent(node);
+    //     צריך לבדוק אם הפעולה הצליחה
     return StatusType::FAILURE;
 }
 
 StatusType TechSystem::removeStudent(int studentId)
 {
+    //StudentTree.remove(studentId);
     return StatusType::FAILURE;
 }
 
 StatusType TechSystem::addCourse(int courseId, int points)
 {
+    //NodeCourse node = new NodeCourse (courseId,points);
+    //CourseTree.insertCourse(node);
     return StatusType::FAILURE;
 }
 
 StatusType TechSystem::removeCourse(int courseId)
 {
+    //RemoveTree.remove(courseId);
     return StatusType::FAILURE;
 }
 
 StatusType TechSystem::enrollStudent(int studentId, int courseId)
 {
+
     return StatusType::FAILURE;
 }
 

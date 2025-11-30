@@ -14,4 +14,5 @@ add_executable(MyProject
         course.h
         NodeStdInCourse.cpp
         NodeStdInCourse.h
+        AvlTree.h
 )
