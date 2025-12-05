@@ -103,10 +103,8 @@ StatusType TechSystem::completeCourse(int studentId, int courseId)
 {
         if (studentId<=0 || courseId<=0) return StatusType::INVALID_INPUT;
 
-        auto* studentNode = students.find(studentId);
-        if (!studentNode)
-            return StatusType::FAILURE;
-        auto* studentData = studentNode->data;
+
+
 
 
         auto* courseNode = courses.find(courseId);
@@ -121,13 +119,13 @@ StatusType TechSystem::completeCourse(int studentId, int courseId)
 
 
         int pts = courseData->getPoints();
-        studentData->addPoints(pts);
+        StdInCourseNode->data->student->addPoints(pts);
 
 
         courseData->enrolled.remove(studentId);
 
 
-        studentData->decCourses();
+        StdInCourseNode->data->student->decCourses();
 
         return StatusType::SUCCESS;
 }
