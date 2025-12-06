@@ -32,7 +32,7 @@ private:
         }
 
 
-        //  names are chosen acording to tutorial 5 slide 5 :
+        //  names are chosen according to tutorial 5 slide 5 :
         //this means d , left child of this means b , right subtree of left means c
         Node* LL() {
             Node* b = left;
@@ -54,7 +54,7 @@ private:
 
 
         }
-        //  names are chosen acording to tutorial 5 slide 5 :
+        //  names are chosen according to tutorial 5 slide 5 :
         //this means b , right child of this means d , left subtree of right means c
         Node* RR() {
             Node* d = right;
@@ -93,7 +93,6 @@ private:
     Node* insert(Node* node, int key, T* data, StatusType& status);
     Node* remove(Node* node, int key, StatusType& status);
     Node* find(Node* node, int key);
-    void inorder(Node* node);
     void destroy(Node* node);
 
 public:
@@ -231,13 +230,7 @@ typename Avl<T>::Node* Avl<T>::find(Node* node, int key) {
     return node;
 }
 
-template <class T>
-void Avl<T>::inorder(Node* node) {
-    if (!node) return;
-    inorder(node->left);
-    cout  << node->key << " ";
-    inorder(node->right);
-}
+
 
 template <class T>
 void Avl<T>::destroy(Node* node) {
